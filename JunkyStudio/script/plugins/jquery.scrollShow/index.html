@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" view="text/html; charset=iso-8859-1" />
+	<title>jQuery.ScrollShow</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+	<script type="text/javascript" src="jquery.scrollShow.js"></script>	
+	<script type="text/javascript">
+	jQuery(function( $ ){
+		//borrowed from jQuery easing plugin
+		//http://gsgd.co.uk/sandbox/jquery.easing.php
+		$.easing.backout = function(x, t, b, c, d){
+			var s=1.70158;
+			return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+		};
+		
+		$('#screen').scrollShow({
+			view:'#view',
+			content:'#images',
+			easing:'backout',
+			wrappers:'link,crop',
+			navigators:'a[id]',
+			navigationMode:'sr',
+			circular:true,
+			start:0
+		});
+	 });
+	</script>
+	<style type="text/css">
+		body{
+			background-color:#CCCCCC;
+		}
+		#screen{
+			width:800px;
+			padding:0;
+		}			
+			#screen li{
+				float:left;
+				list-style:none;
+			}
+			#screen .jq-ss-crop{
+				margin:5px 5px;
+				border:1px solid #FFFFCC;
+				float:left;				
+			}
+				#left,#right{
+					font-weight:bolder;
+					font-size:36px;
+					margin-top:115px;
+					display:block;
+					text-decoration:none;
+					color:black;
+				}
+			#view{
+				margin:20px;
+				width:630px;
+				border:1px white solid;
+				height:212px;
+				overflow:hidden;
+				background-color:black;
+			}
+				#images{
+					width:3818px !important;
+					width:3822px;
+					padding:0;
+				}
+					#images li img{
+						border:0;
+					}
+	</style>
+</head>
+<body>
+	<ul id="screen">
+		<li><a id="left" href="#">&lt;&lt;</a></li>
+		<li id="view">
+			<ul id="images">
+				<li><img src="images/img1.jpg" /></li>
+				<li><img src="images/img2.jpg" /></li>
+				<li><img src="images/img3.jpg" /></li>
+				<li><img src="images/img4.jpg" /></li>
+				<li><img src="images/img5.jpg" /></li>
+				<li><img src="images/img6.jpg" /></li>
+				<li><img src="images/img7.jpg" /></li>
+				<li><img src="images/img8.jpg" /></li>
+				<li><img src="images/img9.jpg" /></li>
+				<li><img src="images/img1.jpg" /></li>
+				<li><img src="images/img2.jpg" /></li>
+				<li><img src="images/img3.jpg" /></li>
+				<li><img src="images/img4.jpg" /></li>
+				<li><img src="images/img5.jpg" /></li>
+				<li><img src="images/img6.jpg" /></li>
+				<li><img src="images/img7.jpg" /></li>
+				<li><img src="images/img8.jpg" /></li>
+				<li><img src="images/img9.jpg" /></li>
+			</ul>
+		</li>
+		<li><a id="right" href="#"> &gt;&gt; </a></li>
+	</ul>
+</body>
+</html>

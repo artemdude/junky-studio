@@ -1,0 +1,265 @@
+﻿    body
+    {
+        padding: 0;
+        margin: 0;
+        font-family: "FuturaOrto";
+        font-size: 19px;
+         font-weight: lighter;
+    }
+
+    #header
+    {
+         margin:  0 auto;
+         width: 1165px;
+    }
+
+    #logo
+    {
+        width: 250px;
+    }
+
+    .text
+    {
+       width: 470px;
+       padding: 32px 0;
+       line-height: 1.4em;
+    }
+    
+    #send
+    {
+         cursor:pointer;
+    }
+
+/*General*/
+    a
+    {
+        outline: medium none;
+    }
+
+    ul
+    {
+        margin:0;
+        padding:0;
+    }
+    
+    li
+    {
+        
+    }
+    
+    img
+    {
+        border: 0;
+    }
+    
+     .clear
+    {
+         clear: both;
+    }
+
+     .center
+    {
+         text-align: center;
+    }
+
+
+    .watermark
+    {
+        color:#bcbbbb;
+    }
+
+  /*Corners*/
+    .corner-top
+    {
+        height: 60px;
+        background: #fff url('../images/background/bgCornerTop.png') no-repeat center top;
+    }
+    .corner-black
+    {
+       
+        background: url('../images/background/bgCornerBlack1.png') no-repeat center bottom;
+    }
+    .corner-blue
+    {
+        width: 100%;
+        background: #000 url('../images/background/bgCornerBlue1.png') no-repeat center bottom;
+    }
+    .corner-white
+    {
+        background: #00C2F2 url('../images/background/bgCornerWhite1.png') no-repeat center bottom;
+    }
+    
+    
+    .corner-bottom
+    {
+        width: 100%;
+        background: #fff url('../images/background/bgCornerBottom1.png') no-repeat center bottom;
+    }
+    
+    .section-height
+    {
+        height: 425px;
+    }
+
+    .section
+     {
+         margin: 0 auto 0 auto;
+         width: 685px;
+         padding: 15px 0 0 0;
+     }
+
+    .section-black
+     {
+          background-color:#000;
+     }
+     
+     .section-blue
+     {
+          background-color:#00C2F2;
+     }
+     
+     .section-white
+     {
+          background-color:#fff;
+     }
+
+     /*menu*/
+     #mainMenu
+     {
+        word-spacing: 1.2em;
+        min-width:500px;
+    }
+    
+    #mainMenu li
+{
+    font-family: "FuturaOrto";
+    font-size: 20px;
+    font-weight:lighter;
+    list-style: none;
+    margin: 0;
+    display: inline;
+    text-transform: uppercase;
+}
+
+   #mainMenu a
+   {
+       color: #000;
+       text-decoration: none;
+   }
+   
+    #lang
+    {
+        background: url("../images/labels/en.png") no-repeat scroll 2px 4px transparent;
+        padding:  40px 16px 30px;
+        color:#fff;
+        word-spacing: 0.2em !important;
+        cursor:default !important;
+    }
+          
+     #lang a
+    {
+        color: #fff;
+    }
+
+   /*menu*/
+    #portfolio-menu li
+    {
+        list-style:none;
+        margin:0;
+        display:inline;
+          
+    }
+
+     /*boxes*/
+    .contacts-box, .contacts-area
+{
+    padding: 8px 20px;
+    border: solid 1px #dddddd;
+    width: 290px;
+    font-size: 20px;
+     font-family: "FuturaOrto";
+}
+
+    .contacts-area
+    {
+         height: 87px;
+    }
+
+    .contacts-area:hover, .text-focus, .contacts-box:hover
+    {
+      
+        -moz-box-shadow: 0 0 10px #00C2F2;
+        -webkit-box-shadow: 0 0 10px #00C2F2;
+         box-shadow: 0 0 10px #00C2F2;
+        outline: none 0 !important;
+    }
+
+
+ /*portfolio studio*/
+    .p-small, .p-link
+    {
+         cursor:pointer;
+    }
+
+    .p-small:hover
+    {
+        -moz-box-shadow: 0 0 15px #00C2F2;
+         -webkit-box-shadow: 0 0 15px #00C2F2;
+         box-shadow: 0 0 15px #00C2F2;
+    }
+
+      .p-title, .studio-title
+      {
+          color: #fff;
+          font-size: 14px;
+          margin: 10px 0 4px 0;
+      }
+
+    .p-desc, .studio-desc
+    {
+        color: #fff;
+        font-size: 12px;
+        padding-top:3px;
+    }
+
+    #toTop
+    {
+        display:none;
+        position: fixed; 
+        bottom : 10px; 
+        right: 10px;
+    }
+
+ /*custom fonts*/
+    @font-face {
+      font-family: "FuturaOrto";
+      src: url("../fonts/FuturaOrto_Regular.ttf");
+    }
+
+    .hide
+    {
+         display:none;
+    }
+    
+    #loader
+    {
+         background:#000;
+         opacity:0.5;
+         position:fixed;
+         top:0;
+         left:0;
+         z-index:10;
+         display:none;
+         text-align:center;
+    }
+    
+    #fbFail
+    {
+        color: #FF0000;
+    }
+    
+    .fbMore
+    {
+         color:#000;
+         cursor:pointer;
+    }

@@ -1,0 +1,68 @@
+﻿/*Portfolio*/
+
+#LogoPortfolio
+{
+     left: 10px;
+     top: 10px;
+}
+
+#OnStartPortfolio
+{
+     right: 10px;
+     top: 80px;
+}
+
+#ClosePortfolio
+{
+    right: 10px;
+    top: 10px;
+}
+
+#ClosePortfolio, #OnStartPortfolio, #LogoPortfolio
+{
+     position: fixed;
+     z-index: 10;
+     cursor:pointer;
+}
+
+    .p-slider img
+{
+    display: inline;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.p-img
+{
+    background-position: center center;
+    background-image: url(../images/loader.gif);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+    
+    .p-container
+    {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    #PortfolioNavigation
+    {
+         display:none;
+    }
+
+    .p-slider
+    {
+      position: relative;
+     /* background-image: url('../images/portfolio-cokehead.png');
+      background-repeat: no-repeat;  */
+     width:3000px;
+     height:3000px;
+    }
+    
